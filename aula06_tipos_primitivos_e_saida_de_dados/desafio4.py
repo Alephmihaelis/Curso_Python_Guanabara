@@ -3,7 +3,7 @@
 object = input('Digite alguma coisa: ')
 print('O tipo primitivo de "{}" é {}'.format(object, type(object)))
 print('"{}" só tem espaços? {}'.format(object, object.isspace()))
-print('"{}" é um número? {}'.format(object, object.isnumeric()))
+print('"{}" pode ser um número? {}'.format(object, object.isnumeric()))
 print('"{}" é alfabético? {}'.format(object, object.isalpha()))
 print('"{}" é alfanumérico? {}'.format(object, object.isalnum()))
 print('"{}" só tem letras maiúsculas? {}'.format(object, object.isupper()))
