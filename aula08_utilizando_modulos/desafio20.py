@@ -11,3 +11,5 @@ aluno_quatro = input('Quarto aluno: ')
 alunos = [aluno_um, aluno_dois, aluno_tres, aluno_quatro]
 
 print('A ordem de apresentação será:\n{}'.format(sample(alunos, k=4)))
+
+# O professor usou `random.shuffle(...)`; mas eu resolvi o exercício com `sample`.
