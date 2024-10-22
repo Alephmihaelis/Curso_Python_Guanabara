@@ -8,10 +8,10 @@ num_real = float(input('Digite um número real: '))
 # Há dois modos de resolver este exercício. Posso resolvê-lo ou com a função `int`, ou com o método `trunc`, ou com o método `floor`.
 
 # Resolução com a função `int`
-print('A porção inteira do número {} é {}'.format(num_real, int(num_real)))
+print('A porção inteira de {} é {}'.format(num_real, int(num_real)))
 
 # Resolução com o método `trunc`
-print('A porção inteira do número {} é {}'.format(num_real, trunc(num_real)))
+print('A porção inteira de {} é {}'.format(num_real, trunc(num_real)))
 
 # Resolução com o método `floor`
-print('A porção inteira do número {} é {}'.format(num_real, floor(num_real)))
+print('A porção inteira de {} é {}'.format(num_real, floor(num_real)))
