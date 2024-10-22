@@ -3,9 +3,10 @@
 
 from math import radians, sin, cos, tan
 
-ang = int(input('Ângulo: '))
-ang_rad = radians(ang)
+ang = float(input('Ângulo: '))
 
-# Por alguma razão, não consigo passar o `input` diretamente como radiano; por essa razão me foi necessário criar a variável `ang_rad`, em que o valor recebido pelo `input` é convertido em radiano pelo método `radians`.
+# Por alguma razão, não consigo passar o `input` diretamente como radiano.
 
-print('Seno de {}º: {:.2f}\nCosseno de {}º: {:.2f}\nTangente de {}º: {:.2f}'.format(ang, sin(ang_rad), ang, cos(ang_rad), ang, tan(ang_rad)))
+print('Seno de {}º: {:.2f}\nCosseno de {}º: {:.2f}\nTangente de {}º: {:.2f}'.format(ang, sin(radians(ang)), ang, cos(radians(ang)), ang, tan(radians(ang))))
+
+# Inicialmente, eu havia criado a variável `rad_ang = radians(ang)`, e depois passado `rad_ang` dentro de `sin`, `con` e `tan`; mas o professor alinhou uma conversão dentro da outra. Resolvi seguir-lhe o exemplo.
