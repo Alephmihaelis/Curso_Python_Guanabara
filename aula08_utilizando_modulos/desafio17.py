@@ -1,7 +1,7 @@
 
 # Faça um programa que leia o comprimento do cateto oposto e do cateto adjacente de um triângulo retângulo, calcule e mostre o comprimento da hipotenusa.
 
-from math import hypot
+from math import hypot # Importação somente da função `hypot`
 
 cat_op = float(input('Comprimento do cateto oposto: '))
 cat_ad = float(input('Comprimento do cateto adjacente: '))
