@@ -8,7 +8,7 @@ from random import choice
 alunos = 'Álefe', 'Gisele', 'Pedro', 'João'
 print('O aluno escolhido foi {}!'.format(choice(alunos)))
 
-# O professor nomeou os alnos com um `input`
+# O professor nomeou os alunos com `input`
 
 aluno_um = input('Primeiro aluno: ')
 aluno_dois = input('Segundo aluno: ')
