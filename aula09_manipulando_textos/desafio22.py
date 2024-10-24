@@ -7,12 +7,17 @@ Crie um programa que leia o nome completo de uma pessoa e mostre:
 4. Quantas letras tem o primeiro nome.
 '''
 
-full_name = input('Nome completo:')
+name = str(input('Digite um nome completo: ')).strip()
+n_maisculas = name.upper()
+n_minusculas = name.lower()
+no_spaces = name.count(' ')
+first_name = name.split()
 
-print('Nome com todas as letras maiúsculas: {}\nNome com todas as letras minúsculas: {}\nLetras ao todo, sem considerar espaços: {}'.format(
-    full_name.upper(),
-    full_name.lower(),
-    len(full_name.replace(" ", ""))
-    ))
+print('MAIÚSCULAS: {}\nMINÚSCULAS: {}\nSEM ESPAÇOS: {}\nQUANTIDADE DE LETRAS DO PRIMEIRO NOME: {}'.format(
+    n_maisculas,
+    n_minusculas,
+    len(name) - no_spaces,
+    name.find(' '))
+)
 
-# Por alguma razão, este código NÃO ESTÁ FUNCIONANDO. Já testei tudo. A lógica me parece correta, e também a sintaxe. Não sei qual possa ser o erro.
+# Resolvi usar variáveis, pois com elas o código ficou mais limpo.
