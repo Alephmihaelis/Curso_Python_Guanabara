@@ -1,8 +1,9 @@
+print('-=-'*15)
+print('\033[1;33;45mOlá, mundo! Estou aprendendo Python!\033[m')
+print('-=-'*15)
 
-print('Olá, mundo!')
-
-nome = input('Qual seu nome? ')
+nome = input('\033[4;32mQual seu nome?\033[m ')
 print('Olá, ' + nome + '! É um prazer te conhecer!')
 
-nome2 = input('Qual seu nome? ')
-print('Olá, {}! É um prazer conhecer você. :D'.format(nome2))
+nome2 = input('\033[1mQual seu nome?\033[m ')
+print('Olá, \033[1;32m{}\033[m! É um prazer conhecer você. :D'.format(nome2))
