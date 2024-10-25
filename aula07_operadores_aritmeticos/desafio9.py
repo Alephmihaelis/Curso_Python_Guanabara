@@ -25,6 +25,7 @@ print('{} x 1 = \033[31m{}\033[m\n{} x 2 = \033[31m{}\033[m\n{} x 3 = \033[31m{}
     alpha,
     (alpha*9),
     alpha,
-    (alpha*10)))
+    (alpha*10)
+    ))
 
 print('-'*25)
