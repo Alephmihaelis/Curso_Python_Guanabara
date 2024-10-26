@@ -19,4 +19,6 @@ aluno_quatro = input('Quatro alunos: ')
 
 # Criação da lista
 lista_alunos = [aluno_um, aluno_dois, aluno_tres, aluno_quatro]
-print('O aluno escolhido foi {}!'.format(choice(lista_alunos)))
+print('O aluno escolhido foi {}!'.format(
+    choice(lista_alunos)
+    ))

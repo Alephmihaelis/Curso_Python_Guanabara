@@ -6,6 +6,10 @@ from math import hypot # Importação somente da função `hypot`
 cat_op = float(input('Comprimento do cateto oposto: '))
 cat_ad = float(input('Comprimento do cateto adjacente: '))
 
-print('Cateto oposto: {}\nCateto adjacente: {}\nHipotenusa: {:.2f}'.format(cat_op, cat_ad, hypot(cat_op, cat_ad)))
+print('Cateto oposto: {}\nCateto adjacente: {}\nHipotenusa: {:.2f}'.format(
+    cat_op,
+    cat_ad,
+    hypot(cat_op, cat_ad)
+    ))
 
 # Fiz o exercício apenas em linguagem de programação.

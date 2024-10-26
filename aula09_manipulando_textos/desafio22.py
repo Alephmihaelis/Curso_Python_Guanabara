@@ -17,7 +17,18 @@ print('O nome digitado é: {}\nMAIÚSCULAS: {}\nMINÚSCULAS: {}\nTOTAL DE LETRAS
 
 nome = str(input('Digite seu nome completo: ')).strip() # This `str` is redundant because all `input` is `str` by default.
 print('Analisando seu nome...')
-print('Seu nome em maiúsculas é "{}"'.format(nome.upper()))
-print('Seu nome em minúsculas é "{}"'.format(nome.lower()))
-print('Seu nome tem ao todo "{}" letras'.format(len(nome) - nome.count(" ")))
-print('Seu primeiro nome tem "{}" letras'.format(nome.find(" ")))
+print('Seu nome em maiúsculas é "{}"'.format(
+    nome.upper()
+    ))
+
+print('Seu nome em minúsculas é "{}"'.format(
+    nome.lower()
+    ))
+
+print('Seu nome tem ao todo "{}" letras'.format(
+    len(nome) - nome.count(" ")
+    ))
+
+print('Seu primeiro nome tem "{}" letras'.format(
+    nome.find(" ")
+    ))
