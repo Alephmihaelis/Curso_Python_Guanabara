@@ -1,0 +1,2 @@
+
+# Refaça o desafio 35 dos triângulos, acrescentando o recurso de mostrar que tipo de triângulo será formado: 1. EQUILÁTERO: todos os lados iguais; 2. ISÓSCELES: dois lados iguais; 3. ESCALENO: todos os lados diferentes.
