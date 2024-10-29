@@ -16,7 +16,7 @@ if media < 5:
     print('Média do aluno: {:.1f}\n{}REPROVADO!{}'.format(media,
                                                           colors['red'],
                                                           colors['limpa']))
-elif media > 5 and media <= 6.9:
+elif media >= 5 and media <= 6.9:
     print('Média do aluno: {:.1f}\n{}RECUPERAÇÃO!{}'.format(media,
                                                         colors['yellow'],
                                                         colors['limpa']))
