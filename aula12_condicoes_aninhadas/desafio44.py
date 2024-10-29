@@ -4,10 +4,10 @@
 preco = int(input('Valor do produto: R$'))
 print('''
 Selecione o modo de pagamento:\n
-[1] À VISTA EM DINHEIRO E/OU CHEQUE: 10% de desconto
-[2] À VISTA NO CARTÃO: 5% de desconto
-[3] ATÉ 2x NO CARTÃO: Preço normal
-[4] 3x OU MAIS NO CARTÃO: 20% de juros\n''')
+[1] À VISTA EM DINHEIRO E/OU CHEQUE.\nVocê receberá 10% de desconto\n
+[2] À VISTA NO CARTÃO.\nVocê receberá 5% de desconto\n
+[3] ATÉ 2x NO CARTÃO.\nVocê pagará o preço normal\n
+[4] 3x OU MAIS NO CARTÃO.\nVocê pagará com 20% de juros\n''')
 
 
 escolha = int(input('Forma de pagamento: '))
