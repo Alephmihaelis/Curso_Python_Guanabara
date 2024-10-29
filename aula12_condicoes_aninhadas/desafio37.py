@@ -44,3 +44,6 @@ elif choice == 3:
         num,
         hex(num)
     ))
+
+else:
+    print('Opção inválida!\nTente novamente.')
