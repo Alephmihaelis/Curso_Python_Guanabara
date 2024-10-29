@@ -36,4 +36,4 @@ elif escolha == 4:
         preco_final,
         valor_parcelas))
 else:
-    print('Opção inválida.')
+    print('Opção inválida.\nSua compra não foi finalizada.')
