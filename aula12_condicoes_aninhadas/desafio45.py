@@ -1,7 +1,7 @@
 
 # Crie um programa que faça o computador jogar Jokenpô com você.
 
-import random
+from random import choice
 from time import sleep
 
 colors = {
@@ -14,9 +14,9 @@ print('='*22)
 print('Vamos jogar `Jokenpô`!')
 print('='*22)
 
-jogadas = ['Pedra', 'Papel', 'Tesoura']
+jogadas = ['Pedra', 'Papel', 'Tesoura'] # O professor pôs as opções entre (); eu as pus entre [].
 
-jogada_pc = random.choice(jogadas)
+jogada_pc = choice(jogadas) # O professor usou só `randint`; eu, apenas `choice`
 
 # Escolha do jogador
 jogador = int(input('[0] Pedra\n[1] Papel\n[2] Tesoura\nJogada: '))
