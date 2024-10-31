@@ -13,3 +13,7 @@ for second in range(10, -1, -1):
     sleep(1)
 
 print(emoji.emojize(':fireworks: :fireworks: :fireworks: :fireworks:'))
+
+print('='*30)
+print('fim da contagem regressiva'.upper())
+print('='*30)
