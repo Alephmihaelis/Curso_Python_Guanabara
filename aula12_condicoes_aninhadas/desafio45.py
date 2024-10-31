@@ -11,7 +11,7 @@ colors = {
 }
 
 print('='*22)
-print('Vamos jogar `Jokenpô`!')
+print('Vamos jogar `Jokenpô`!'.upper())
 print('='*22)
 
 jogadas = ['Pedra', 'Papel', 'Tesoura'] # O professor pôs as opções entre (); eu as pus entre [].
@@ -22,7 +22,7 @@ jogada_pc = choice(jogadas) # O professor usou `randint`; eu, `choice`
 jogador = int(input('[0] Pedra\n[1] Papel\n[2] Tesoura\nJogada: '))
 
 # Verifica se o jogador fez uma jogada válida
-if jogador not in [0, 1, 2]:
+if jogador != [0, 1, 2]:
     print('Jogada inválida! Tente novamente.')
 
 elif jogador in [0, 1, 2]:
