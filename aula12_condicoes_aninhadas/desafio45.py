@@ -21,7 +21,6 @@ jogada_pc = random.choice(jogadas)
 # Escolha do jogador
 jogador = int(input('[0] Pedra\n[1] Papel\n[2] Tesoura\nJogada: '))
 
-
 if jogador not in [0, 1, 2]:
     print('Jogada inválida! Tente novamente.')
 
