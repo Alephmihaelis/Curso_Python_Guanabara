@@ -25,4 +25,8 @@ for data in range(1, 8):
     else:
         maioridade += 1
 
-print('No grupo das pessoas citadas:\n{} já atingiram a maioridade;\n{} têm menos de 18 anos.'.format(maioridade, menoridade))
+# Tratamento da string para casos singulares e plurais
+if menoridade == 1 and maioridade > 1:
+    print('No grupo das pessoas citadas, \n{} pessoas atingiram a maioridade\n{} pessoa ainda não atingiu a maioridade'.format(maioridade, menoridade))
+elif maioridade == 1 and menoridade > 1:
+    print('No grupo das pessoas citadas, \n{} pessoa atingiu a maioridade\n{} pessoas ainda não atingiram a maioridade'.format(maioridade, menoridade))
