@@ -22,7 +22,7 @@ for data in range(1, 8):
         menoridade += 1
 
     # Acrescenta 1 à variável `maioridade`, se a idade for maior que 18 anos, ou igual a 18 anos.
-    elif idade >= 18:
+    else:
         maioridade += 1
 
 print('No grupo das pessoas citadas:\n{} já atingiram a maioridade;\n{} têm menos de 18 anos.'.format(maioridade, menoridade))
