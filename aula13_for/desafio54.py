@@ -6,7 +6,7 @@ from datetime import date
 # Recebe o ano atual do computador
 ano_atual = date.today().year
 
-# Acumuladores
+# Contadores
 menoridade = 0
 maioridade = 0
 
