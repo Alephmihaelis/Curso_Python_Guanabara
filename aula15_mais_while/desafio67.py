@@ -12,9 +12,9 @@ while True:
     num = int(input('Você quer ver a tabuada de que valor? '))
     if num < 0:
         break
-    print('~'*15)
+    print('-'*20)
     for x in range(1, 11):
         print(f'{num} x {x} = {num*x}')
-    print('~'*15)
+    print('-'*20)
 
 print('PROGRAMA ENCERRADO!')
