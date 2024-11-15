@@ -48,6 +48,6 @@ elif homens == 0:
 if m_n_vinte > 1:
     print(f'{m_n_vinte} mulheres têm menos de 20 anos.')
 elif m_n_vinte == 1:
-    print('Somente uma das mulheres cadastradas tem mais de 20 anos.')
+    print('Somente uma das mulheres cadastradas tem menos de 20 anos.')
 elif m_n_vinte == 0:
     print('Nenhuma mulher cadastrada tem menos de 20 anos.')
