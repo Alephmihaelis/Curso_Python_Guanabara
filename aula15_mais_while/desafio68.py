@@ -43,7 +43,7 @@ if vitoria > 1:
     print(f'Ao todo, você venceu {vitoria} vezes.')
 
 if vitoria == 1:
-    print(f'Ao todo, você só venceu {vitoria} uma vez')
+    print(f'Ao todo, você só venceu {vitoria} uma vez.')
 
 if vitoria == 0:
     print('Que dó! Você não venceu nenhuma vez!')
