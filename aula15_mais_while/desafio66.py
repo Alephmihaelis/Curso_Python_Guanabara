@@ -14,5 +14,7 @@ while True:
     nuns += 1
     soma += num
 
+print('~'*30)
 print(f'Você digitou {nuns} números.')
 print(f'A soma de todos os números vale {soma}')
+print('~'*30)
