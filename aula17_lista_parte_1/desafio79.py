@@ -10,10 +10,14 @@ while True:
 
     if valor not in numeros:
         numeros.append(valor)
+        print('Valor adicionado com sucesso!')
+    else:
+        print('Esse valor já foi informado, e portanto não foi adicionado de novo!')
 
-    response = input('Deseja continuar? [S/N]: ').upper().strip()
+    response = input('Deseja continuar? [S/N] ').upper().strip()
     if response == 'N':
         break
 
 numeros.sort()
+print('~' * 30)
 print(f'Você gerou a lista {numeros}')
