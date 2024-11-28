@@ -5,15 +5,18 @@ Crie um programa onde o usuário possa digitar 5 valores números e cadastre-os 
 
 numeros = []
 
-for p, num in enumerate(range(5)):
-    numero = int(input(f'Digite um valor na posição {p+1}: '))
+for num in range(5):
+    numero = int(input(f'Digite um valor: '))
 
-    if len(numeros) == 0 or numero > numeros[-1]:
+    if num == 0 or numero > numeros[-1]:
         numeros.append(numero)
     else:
-        for i in range(len(numeros)):
-            if numero <= numeros[i]:
-                numeros.insert(i, numero)
+        pos = 0
+        while pos < len(numeros):
+            if numero <= numeros[pos]:
+                numeros.insert(pos, numero)
                 break
+            pos +=1
 
-print(numeros)
+print('~' * 30)
+print(f'Os valores digitados, em ordem, são {numeros}')
