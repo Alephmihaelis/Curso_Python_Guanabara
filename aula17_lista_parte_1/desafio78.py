@@ -1,26 +1,31 @@
 
 '''
 Faça um programa que leia 5 valores numéricos e guarde-os em uma lista.
-No final, mostre qual foi o maior e o menor valor digitados e as suas respectivas posições na lista.
+No final, mostre qual foi o `maior` e o `menor` valor digitados e suas respectivas posições na lista.
 '''
 
-maior = menor = None
+listanum = []
+maior = 0
+menor = 0
 
-maior_pos = menor_pos = None
+for p in range(5):
+    listanum.append(int(input(f'Digite um valor para a posição {p}: ')))
+    if p == 0:
+        maior = menor = listanum[p]
+    else:
+        if listanum[p] > maior:
+            maior = listanum[p]
+        if listanum[p] < menor:
+            menor = listanum[p]
 
-numeros = []
+print('~' * 45)
+print(f'Você digitou os valores {listanum}')
+print(f'O maior valor digitado foi {maior}, nas posições ', end='')
+for i, v in enumerate(listanum):
+    if v == maior:
+        print(f'{i}...', end='')
 
-for num in range(5):
-    valor = int(input('Digite um valor: '))
-    numeros.append(valor)
-    
-    if maior is None or valor > maior:
-        maior = valor
-        maior_pos = num
-        
-    if menor is None or valor < menor:
-        menor = valor
-        menor_pos = num
-
-print(f'O maior valor foi {maior}, na posição {maior_pos}')
-print(f'O menor valor foi {menor}, na posição {menor_pos}')
+print(f'\nO menor valor digitado foi {menor}, nas posições ', end='')
+for i, v in enumerate(listanum):
+    if v == menor:
+        print(f'{i}...', end='')
