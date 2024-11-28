@@ -1,7 +1,9 @@
 
-'''
-Crie um programa que tenha uma tupla com várias palavras (não use acentos).
-Depois, você deverá mostrar, para cada palavra, quais são suas vogais.
-'''
+palavras = ('joao', 'melancia', 'madeira',
+            'bobo', 'computador', 'python')
 
-palavras = ('joao', 'melancia', 'madeira', 'bobo', 'computador')
+for p in palavras:
+    print(f'\nNa palavra «{p.upper()}», as vogais são: ', end='')
+    for letra in p:
+        if letra.lower() in 'aeiou':
+            print(letra, end=' ')
