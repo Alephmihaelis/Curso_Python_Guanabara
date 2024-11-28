@@ -28,6 +28,8 @@ while True:
     if response == 'N':
         break
 
+print('~' * 30)
+
 print(f'Sua lista completa é: {numeros}')
 print(f'Sua lista só com os números pares é {pares}')
 print(f'Sua lista só com os números ímpares é {impares}')
