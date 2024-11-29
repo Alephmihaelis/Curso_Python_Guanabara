@@ -84,3 +84,15 @@ print(estado2)
 print(brasil[0])
 print(brasil[0]['uf'])
 print(brasil[1]['sigla'])
+
+state = dict()
+brazil = []
+
+for c in range(0, 3):
+    state['uf'] = input('Unidade Federativa: ')
+    state['sigla'] = input('Sigla do Estado: ')
+    brazil.append(state.copy())
+
+for state in brazil:
+    for k, v in state.items():
+        print(f'O campo {k} tem valor {v}')
