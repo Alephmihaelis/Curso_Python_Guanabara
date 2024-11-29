@@ -19,15 +19,15 @@ ano = date.today().year
 
 pessoa = {}
 
-pessoa['nome'] = input('Nome: ')
-nascimento = int(input('Ano de nascimento: '))
+pessoa['nome'] = input('NOME: ')
+nascimento = int(input('ANO DE NASCIMENTO: '))
 pessoa['idade'] = ano - nascimento
-pessoa['cpts'] = int(input('Número da carteira de trabalho: '))
+pessoa['cpts'] = int(input('NÚMERO DA CARTEIRA DE TRABALHO: '))
 
 if pessoa['cpts'] != 0:
-    pessoa['ano_de_contratacao'] = int(input('Quando você foi contratado(a)? '))
-    pessoa['salario'] = int(input('Quanto você recebe? R$'))
-    print(f'Já que você foi contratado em {pessoa["ano_de_contratacao"]} e o mínimo de contribuição para aposentar-se é 35 anos,\nvocê só poderá se aposentar em, pelo menos, {pessoa["ano_de_contratacao"] + 35}')
+    pessoa['ano_de_contratacao'] = int(input('QUANDO VOCÊ FOI CONTRATADO(A)? '))
+    pessoa['salario'] = int(input('QUANTO VOCÊ RECEBE? R$'))
+    print(f'ANO MÍNIMO PARA SE APOSENTAR: {pessoa["ano_de_contratacao"] + 35}')
 
 elif pessoa['cpts'] == 0:
     print('Você ainda não tem carteira de trabalho!')
