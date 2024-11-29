@@ -6,25 +6,25 @@ Média >= 7: APROVADO
 Média <= 7: REPROVADO
 '''
 
-dicionario = {
-    'nome': '',
+aluno = {
+    'nome': str,
     'média': float,
-    'situação': ''
+    'situação': str
 }
 
 print('~' * 30)
 nome = input('Nome do aluno: ')
-dicionario['nome'] = nome
+aluno['nome'] = nome
 
 media = float(input('Média do aluno: '))
-dicionario['média'] = media
+aluno['média'] = media
 
 if media >= 7:
-    dicionario['situação'] = 'Aprovado'
+    aluno['situação'] = 'Aprovado'
 else:
-    dicionario['situação'] = 'Reprovado'
+    aluno['situação'] = 'Reprovado'
 
 print('~' * 30)
 
-for k, v in dicionario.items():
+for k, v in aluno.items():
     print(f'{k.upper()}: {v}')
