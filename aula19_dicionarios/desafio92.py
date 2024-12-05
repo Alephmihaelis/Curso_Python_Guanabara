@@ -12,7 +12,6 @@ from datetime import date
 
 print('=' * 30)
 print('ANÁLISE DE CTPS!')
-print('Se você não tem CTPS,\ndigite 0 quando lhe for perguntado o número da CTPS.')
 print('=' * 30)
 
 ano = date.today().year
@@ -22,12 +21,24 @@ pessoa = {}
 pessoa['nome'] = input('NOME: ')
 nascimento = int(input('ANO DE NASCIMENTO: '))
 pessoa['idade'] = ano - nascimento
-pessoa['cpts'] = int(input('NÚMERO DA CARTEIRA DE TRABALHO: '))
+pessoa['cpts'] = int(input('NÚMERO DA CARTEIRA DE TRABALHO [0 se não existe]: '))
 
 if pessoa['cpts'] != 0:
-    pessoa['ano_de_contratacao'] = int(input('EM QUE ANO VOCÊ FOI CONTRATADO(A)? '))
+    pessoa['ano_de_contratacao'] = int(input('ANO DE CONTRATAÇÃO: '))
     pessoa['salario'] = int(input('QUANTO VOCÊ RECEBE? R$'))
-    print(f'ANO MÍNIMO PARA SE APOSENTAR: {pessoa["ano_de_contratacao"] + 35}')
+
+    print('~' * 30)
+
+    print(f'''Nome: {pessoa['nome']}
+Idade: {pessoa['idade']}
+CTPS: {pessoa["cpts"]}
+ANO DE CONTRATAÇÃO: {pessoa['ano_de_contratacao']}
+SALÁRIO: R${pessoa['salario']}
+ANO MÍNIMO PARA SE APOSENTAR: {pessoa['ano_de_contratacao'] + 35}''')
+
 
 elif pessoa['cpts'] == 0:
-    print('Você ainda não tem carteira de trabalho!')
+    print('~' * 30)
+    print(f'''Nome: {pessoa['nome']}
+Idade: {pessoa['idade']}
+CTPS: Não tem CPTS.''')
