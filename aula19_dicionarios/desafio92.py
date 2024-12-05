@@ -25,7 +25,7 @@ pessoa['idade'] = ano - nascimento
 pessoa['cpts'] = int(input('NÚMERO DA CARTEIRA DE TRABALHO: '))
 
 if pessoa['cpts'] != 0:
-    pessoa['ano_de_contratacao'] = int(input('QUANDO VOCÊ FOI CONTRATADO(A)? '))
+    pessoa['ano_de_contratacao'] = int(input('EM QUE ANO VOCÊ FOI CONTRATADO(A)? '))
     pessoa['salario'] = int(input('QUANTO VOCÊ RECEBE? R$'))
     print(f'ANO MÍNIMO PARA SE APOSENTAR: {pessoa["ano_de_contratacao"] + 35}')
 
