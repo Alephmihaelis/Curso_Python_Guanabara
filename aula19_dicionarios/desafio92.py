@@ -21,24 +21,24 @@ pessoa = {}
 pessoa['nome'] = input('NOME: ')
 nascimento = int(input('ANO DE NASCIMENTO: '))
 pessoa['idade'] = ano - nascimento
-pessoa['cpts'] = int(input('NÚMERO DA CARTEIRA DE TRABALHO [0 se não existe]: '))
+pessoa['ctps'] = int(input('NÚMERO DA CARTEIRA DE TRABALHO [0 se não existe]: '))
 
-if pessoa['cpts'] != 0:
+if pessoa['ctps'] != 0:
     pessoa['ano_de_contratacao'] = int(input('ANO DE CONTRATAÇÃO: '))
-    pessoa['salario'] = int(input('QUANTO VOCÊ RECEBE? R$'))
+    pessoa['salario'] = int(input('QUAL SEU SALÁRIO? R$'))
 
     print('~' * 30)
 
     print(f'''NOME: {pessoa['nome']}
 IDADE: {pessoa['idade']}
-CTPS: {pessoa["cpts"]}
+CTPS: {pessoa["ctps"]}
 ANO DE CONTRATAÇÃO: {pessoa['ano_de_contratacao']}
 SALÁRIO: R${pessoa['salario']}
 ANO MÍNIMO PARA SE APOSENTAR: {pessoa['ano_de_contratacao'] + 35}''')
 
 
-elif pessoa['cpts'] == 0:
+elif pessoa['ctps'] == 0:
     print('~' * 30)
     print(f'''NOME: {pessoa['nome']}
 IDADE: {pessoa['idade']}
-CTPS: Não tem CPTS.''')
+CTPS: Não tem CTPS.''')
