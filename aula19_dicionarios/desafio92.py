@@ -29,8 +29,8 @@ if pessoa['cpts'] != 0:
 
     print('~' * 30)
 
-    print(f'''Nome: {pessoa['nome']}
-Idade: {pessoa['idade']}
+    print(f'''NOME: {pessoa['nome']}
+IDADE: {pessoa['idade']}
 CTPS: {pessoa["cpts"]}
 ANO DE CONTRATAÇÃO: {pessoa['ano_de_contratacao']}
 SALÁRIO: R${pessoa['salario']}
@@ -39,6 +39,6 @@ ANO MÍNIMO PARA SE APOSENTAR: {pessoa['ano_de_contratacao'] + 35}''')
 
 elif pessoa['cpts'] == 0:
     print('~' * 30)
-    print(f'''Nome: {pessoa['nome']}
-Idade: {pessoa['idade']}
+    print(f'''NOME: {pessoa['nome']}
+IDADE: {pessoa['idade']}
 CTPS: Não tem CPTS.''')
