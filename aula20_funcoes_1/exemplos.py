@@ -16,3 +16,12 @@ def mensagem(msg):
 mensagem('APRENDENDO FUNÇÕES!')
 mensagem('Python é muito legal!')
 mensagem('I heard you struck my son...')
+
+#################################################
+
+def soma(a, b):
+    print(f'A = {a} e B = {b}')
+    s = a + b
+    print(f'A soma A + B vale {s}')
+
+soma(4, 5)
