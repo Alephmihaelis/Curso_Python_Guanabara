@@ -43,3 +43,26 @@ def somar(a=0, b=0, c=0):
 somar(3, 2, 5)
 somar(8, 4)
 somar()
+
+########################
+## Escopo de variável ##
+########################
+
+n = 2
+print(n)
+print(f'No programa principal, {n} vale 2')
+
+def teste():
+    x = 8
+    print(f'Na função `teste`, n vale {n}')
+    print(f'Na função `teste`, x vale {x}')
+
+#### ESCOPO GLOBAL x ESCOPO LOCAL ####
+
+def funcao():
+    n1 = 4
+    print(f'n1 dentro vale {n1}')
+
+funcao()
+n1 = 2
+print(f'n1 global vale {n1}')
