@@ -79,3 +79,30 @@ r1 = somar2(3,2,5)
 r2 = somar2(2,2)
 r3 = somar2(6)
 print(f'Os cálculos deram {r1}, {r2}, {r3}')
+
+
+
+def fatorial(num = 1):
+    f = 1
+    for c in range(num, 0, -1):
+        f *= c
+    return f
+
+n = int(input('Número: '))
+print(f'O fatorial de {n} é igual a {fatorial(n)}')
+
+f1 = fatorial(5)
+f2 = fatorial(4)
+f3 = fatorial()
+
+print(f'Os resultados são {f1}, {f2}, {f3}')
+
+def parImpar(num=0):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+
+num = int(input('Digite um número: '))
+print(parImpar(num))
