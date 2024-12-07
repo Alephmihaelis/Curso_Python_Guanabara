@@ -11,12 +11,12 @@ Olá, mundo!
 
 def escreva(txt, c):
     print('~' * c)
-    print(txt)
+    print(f'  {txt}')
     print('~' * c)
 
 
 # Programa principal
-texto = input('Digite um texto qualquer: ').strip()
-comp = len(texto)
+texto = input('Digite um texto qualquer: ')
+comp = len(texto) + 4
 
 escreva(texto, comp)
