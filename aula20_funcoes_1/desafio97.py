@@ -15,6 +15,7 @@ def escreva(txt, c):
     print('~' * c)
 
 
+# Programa principal
 texto = input('Digite um texto qualquer: ').strip()
 comp = len(texto)
 
