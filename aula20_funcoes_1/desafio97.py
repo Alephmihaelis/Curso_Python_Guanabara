@@ -8,3 +8,14 @@ Saída:
 Olá, mundo!
 ~~~~~~~~~~
 '''
+
+def escreva(txt, c):
+    print('~' * c)
+    print(txt)
+    print('~' * c)
+
+
+texto = input('Digite um texto qualquer: ').strip()
+comp = len(texto)
+
+escreva(texto, comp)
