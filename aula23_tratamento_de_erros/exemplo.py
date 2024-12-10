@@ -21,12 +21,6 @@ KeyError
 '''
 
 try:
-    pass
-
-except:
-    pass
-
-try:
     a = int(input('Numerador: '))
     b = int(input('Denominador: '))
     r = a / b
