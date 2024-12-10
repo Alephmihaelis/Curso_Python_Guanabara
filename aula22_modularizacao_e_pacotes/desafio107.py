@@ -11,14 +11,20 @@ print('~' * len(a))
 print(a)
 print('~' * len(a))
 
-while True:
-    num = int(input('Digite um valor em reais: R$'))
-    
-    a_resp = input('Deseja aumentar o valor? [S/N] ').upper().strip()
-    if a_resp == 'S':
-        valor = int(input('Quanto você quer aumentar? R$'))
-        print('Valor total: R$', end='')
-        print(aumentar(num, valor))
-    r = input('Deseja continuar? [S/N] ').upper().strip()
-    if r == 'N':
-        break
+num = float(input('Digite um valor em reais: R$'))
+valor = float(input('Quanto você quer aumentar? R$'))
+print('Valor total: R$', end='')
+print(aumentar(num, valor))
+
+num = float(input('Digite um valor em reais: R$'))
+valor = float(input('Quanto você quer aumentar? R$'))
+print('Valor total: R$', end='')
+print(diminuir(num, valor))
+
+num = float(input('Digite um valor em reais: R$'))
+print('Valor total: R$', end='')
+print(dobro(num))
+
+num = float(input('Digite um valor em reais: R$'))
+print('Valor total: R$', end='')
+print(metade(num))
