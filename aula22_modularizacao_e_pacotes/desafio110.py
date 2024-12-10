@@ -7,4 +7,4 @@ from moeda import *
 
 valor = float(input('Digite um valor: '))
 n = float(input('Valor do aumento/subtração: '))
-resumo(valor, n, fmt=True)
+resumo(valor, n)
