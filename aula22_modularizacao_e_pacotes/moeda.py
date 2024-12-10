@@ -9,23 +9,32 @@ def moedas(valor, fmt=False):
         return n_format
 
 
-def aumentar(n = 0, valor=0, fmt=False):
+def aumentar(n=0, valor=0, fmt=False):
     soma = n + valor
     return moedas(soma, fmt)
     
     
-def diminuir(valor = 0, n=0, fmt=False):
+def diminuir(valor= 0, n=0, fmt=False):
     subtracao = valor - n
     return moedas(subtracao, fmt)
     
     
-def dobro(valor = 0, fmt=False):
+def dobro(valor=0, fmt=False):
     dobro = valor * 2
     return moedas(dobro, fmt)
     
     
-def metade(valor = 0, fmt=False):
+def metade(valor=0, fmt=False):
     metade = valor / 2
     return moedas(metade, fmt)
 
 
+def resumo(valor=0, n=0, fmt=False):
+    print('~' * 30)
+    print('RESUMO DO VALOR'.center(30))
+    print('~' * 30)
+    print(f'Valor analisado: {moedas(valor, fmt)}')
+    print(f'Aumento de R${n:.2f}: {aumentar(n, valor, fmt)}')
+    print(f'Diminuição de R${n:.2f}: {diminuir(valor, n, fmt)}')
+    print(f'Dobro do valor: {dobro(valor, fmt)}')
+    print(f'Metade do valor: {metade(valor, fmt)}')
