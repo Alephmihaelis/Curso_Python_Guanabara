@@ -1,23 +1,25 @@
+def moedas(valor):
+    res = f'R${valor:.2f}'
+    return res
+
 
 def aumentar(n, valor=0):
     soma = n + valor
-    return soma
+    return moedas(soma)
     
     
 def diminuir(valor, n=0):
     subtracao = valor - n
-    return subtracao
+    return moedas(subtracao)
     
     
 def dobro(valor):
     dobro = valor * 2
-    return dobro
+    return moedas(dobro)
     
     
 def metade(valor):
     metade = valor / 2
-    return metade
+    return moedas(metade)
 
-def moedas(valor):
-    res = f'R${valor:.2f}'
-    return res
+

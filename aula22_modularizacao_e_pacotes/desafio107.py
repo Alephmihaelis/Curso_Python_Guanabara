@@ -22,7 +22,7 @@ print(aumentar(num, valor))
 print('=' * 40)
 
 num = float(input('Digite um valor em reais: '))
-valor = float(input('Quanto você quer aumentar? '))
+valor = float(input('Quanto você quer subtrair? '))
 print('Valor total: ', end='')
 print(diminuir(num, valor))
 
