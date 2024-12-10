@@ -12,3 +12,17 @@ def dobro(n):
 
 def triplo(n):
     return n * 3
+
+
+####### para exemplos de pacote ######
+def hasfhfasuh():
+    pass
+
+
+def asfhufas():
+    pass
+
+
+def hsuhfa():
+    pass
+
