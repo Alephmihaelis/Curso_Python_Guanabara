@@ -19,10 +19,10 @@ Se os módulos ficarem muito grandes, você pode usar os PACOTES.
 
 """
 
-from uteis import *
+from uteis import numeros
 
 num = int(input('Digite um valor: '))
-fat = fatorial(num)
+fat = numeros.fatorial(num)
 print(f'O fatorial de {num} é {fat}')
-print(f'O dobro de {num} é {dobro(num)}')
-print(f'O triplo de {num} é {triplo(num)}')
+#print(f'O dobro de {num} é {numeros.dobro(num)}')
+#print(f'O triplo de {num} é {numeros.triplo(num)}')
