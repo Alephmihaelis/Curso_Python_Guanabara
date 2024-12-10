@@ -1,10 +1,13 @@
 
 '''
-Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(), diminuir(), dobro() e metade(). Faça também um programa que importe esse módulo e use algumas dessas funções.
+Crie um módulo chamado moeda.py que tenha as funções incorporadas
+`aumentar()`,
+`diminuir()`,
+`dobro()` e
+`metade()`. Faça também um programa que importe esse módulo e use algumas dessas funções.
 '''
 
 from moeda import *
-
 
 a = '  GERENCIADOR DE MOEDAS  '
 print('~' * len(a))
