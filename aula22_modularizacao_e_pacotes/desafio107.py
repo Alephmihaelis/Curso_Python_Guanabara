@@ -14,26 +14,26 @@ print('~' * len(a))
 print(a)
 print('~' * len(a))
 
-num = float(input('Digite um valor em reais: R$'))
-valor = float(input('Quanto você quer aumentar? R$'))
-print('Valor total: R$', end='')
+num = float(input('Digite um valor em reais: '))
+valor = float(input('Quanto você quer aumentar? '))
+print('Valor total: ', end='')
 print(aumentar(num, valor))
 
 print('=' * 40)
 
-num = float(input('Digite um valor em reais: R$'))
-valor = float(input('Quanto você quer aumentar? R$'))
-print('Valor total: R$', end='')
+num = float(input('Digite um valor em reais: '))
+valor = float(input('Quanto você quer aumentar? '))
+print('Valor total: ', end='')
 print(diminuir(num, valor))
 
 print('=' * 40)
 
-num = float(input('Digite um valor em reais: R$'))
-print('Valor total: R$', end='')
+num = float(input('Digite um valor em reais: '))
+print('Valor total: ', end='')
 print(dobro(num))
 
 print('=' * 40)
 
-num = float(input('Digite um valor em reais: R$'))
-print('Valor total: R$', end='')
+num = float(input('Digite um valor em reais: '))
+print('Valor total: ', end='')
 print(metade(num))
