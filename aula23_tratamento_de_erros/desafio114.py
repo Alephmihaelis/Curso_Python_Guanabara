@@ -14,3 +14,4 @@ except urllib.error.URLError:
 
 else:
     print('Tudo certo! ;D')
+    print(site.read())
