@@ -5,8 +5,20 @@ Crie um módulo chamado moeda.py que tenha as funções incorporadas aumentar(),
 
 from moeda import *
 
-num = int(input('Digite um valor em reais: R$'))
-valor = int(input('Quanto você quer aumentar? R$'))
 
-print('Valor total: R$', end='')
-print(aumentar(num, valor))
+a = '  GERENCIADOR DE MOEDAS  '
+print('~' * len(a))
+print(a)
+print('~' * len(a))
+
+while True:
+    num = int(input('Digite um valor em reais: R$'))
+    
+    a_resp = input('Deseja aumentar o valor? [S/N] ').upper().strip()
+    if a_resp == 'S':
+        valor = int(input('Quanto você quer aumentar? R$'))
+        print('Valor total: R$', end='')
+        print(aumentar(num, valor))
+    r = input('Deseja continuar? [S/N] ').upper().strip()
+    if r == 'N':
+        break

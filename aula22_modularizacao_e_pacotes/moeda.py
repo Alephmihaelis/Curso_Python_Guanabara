@@ -4,13 +4,16 @@ def aumentar(n, valor=0):
     return soma
     
     
-def diminuir():
-    pass
+def diminuir(valor, n=0):
+    subtracao = valor - n
+    return subtracao
     
     
-def dobro():
-    pass
+def dobro(valor):
+    dobro = valor * 2
+    return dobro
     
     
-def metade():
-    pass
+def metade(valor):
+    metade = valor / 2
+    return metade
