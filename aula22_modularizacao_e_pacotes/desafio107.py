@@ -16,6 +16,8 @@ valor = float(input('Quanto você quer aumentar? R$'))
 print('Valor total: R$', end='')
 print(aumentar(num, valor))
 
+print('=' * 20)
+
 num = float(input('Digite um valor em reais: R$'))
 valor = float(input('Quanto você quer aumentar? R$'))
 print('Valor total: R$', end='')
