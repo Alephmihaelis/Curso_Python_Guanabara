@@ -5,14 +5,19 @@ print(7+4)
 
 print('7' + '4')
 
-nome = 'Alefe'
+nome = 'ABCDE'
 idade = 24
 peso = 75.7
 
 print(nome, idade, peso)
 
-nome = input('Qual seu nome?' )
-idade = input('Qual sua idade?' )
-peso = input('Qual seu peso? ')
+print('Qual seu nome?')
+nome = input()
+
+print('Qual sua idade?')
+idade = input()
+
+print('Qual seu peso?')
+peso = input()
 
 print(nome, idade, peso)
