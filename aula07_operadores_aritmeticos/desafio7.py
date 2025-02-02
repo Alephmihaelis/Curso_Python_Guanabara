@@ -1,11 +1,13 @@
 
-# Desenvolva um programa que leia as duas notas de um aluno, calcule e mostre a sua média.
+"""
+Programa que lê duas notas de um aluno, calcula e mostra sua média.
+"""
 
-alpha = float(input('Digite a primeira nota: '))
-beta = float(input('Digite a segunda nota: '))
+print('Digite a primeira nota.')
+notaUm = float(input())
 
-print('\033[4mAs notas do aluno são {} e {}.\nA média do aluno é {:.1f}\033[m'.format(
-    alpha,
-    beta,
-    (alpha + beta) / 2
-    ))
+print('Digite a segunda nota.')
+notaDois = float(input())
+
+print(f"""As notas do aluno são {notaUm} e {notaDois}.
+A média do aluno é {(notaUm + notaDois) / 2:.1f}""")
