@@ -1,15 +1,36 @@
 
-# Crie um algoritmo que leia um número e mostre seu dobro, triplo e raiz quadrada.
+"""
+Cria um algoritmo que lê um número e mostra seu dobro, triplo e raiz quadrada.
+"""
+import sys
 
-alpha = int(input('Digite um número: '))
-print('\033[1;33;45mVocê digitou "{}".\nO dobro de "{}" vale {}.\nO triplo de "{}" é {}.\nA raiz quadrada de "{}" vale {:.1f}.\033[m'.format(
-    alpha,
-    alpha,
-    (alpha*2),
-    alpha,
-    (alpha*3),
-    alpha,
-    (alpha**(1/2))
-    ))
+def encerraPrograma(contador):
+    """
+    Função que encerra o programa caso o número de tentativas seja igual a 3.
+    Recebe o contador como parâmetro.
+    """
+    if contador == 3:
+        print('Número máximo de tentativas atingido. Programa encerrado.')
+        sys.exit()
 
-# Feito com uma variável só, porque o resultado é exibido uma só vez.
+cont = 0
+
+print('Digite um número.')
+
+while True:
+    try:
+        num = int(input())
+        print(f"""\033[1;33;45mVocê digitou "{num}".
+O dobro de "{num}" vale {num * 2}.
+O triplo de "{num}" é {num * 3}.
+A raiz quadrada de "{num}" vale {num ** (1/2)}.\033[m""")
+        break
+
+    except ValueError:
+        cont += 1
+        print('Por favor, insira um número válido.')
+        encerraPrograma(cont)
+    except Exception as e:
+        cont += 1
+        print(f'{e}. Tente novamente.')
+        encerraPrograma(cont)
