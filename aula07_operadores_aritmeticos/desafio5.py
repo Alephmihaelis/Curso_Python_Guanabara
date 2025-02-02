@@ -18,7 +18,7 @@ Sucessor de \033[1m"{}"\033[m: \033[1m"{}"\033[m.""".format(
 num, (num - 1), num, (num + 1)))
         break
     except ValueError:
-        print('Digite um dado válido.')
+        print('Digite um valor válido.')
         continue
     except Exception as e:
         print(f'Ocorreu um erro inesperado: {e}')
