@@ -1,4 +1,10 @@
 
-primeiro_numero = input('Primeiro número: ')
-segundo_numero = input('Segundo número: ')
-print('\033[45mA soma é', primeiro_numero + segundo_numero)
+print('Primeiro número:')
+primeiroNumero = input()
+
+print('Segundo número:')
+segundoNumero = input()
+
+print('\033[45mA soma é', primeiroNumero + segundoNumero)
+
+# Obviamente, este código não soma de fato os dois números informados.
