@@ -1,13 +1,25 @@
 
-# Faça um programa que leia um número inteiro e mostre na tela o seu sucessor e seu antecessor.
+"""
+Programa que lê um número inteiro e mostra na tela seu sucessor e antecessor.
+"""
 
-alpha = int(input('Digite um número qualquer: '))
+MSG = 'ANTECESSOR E SUCESSOR'
+print('=' * len(MSG))
+print(MSG)
+print('=' * len(MSG))
 
-# Como o resultado será usado para uma coisa só, não o armazenarei dentro de uma variável; em vez disso, passá-lo-ei diretamente na função format.
+print('Digite um número inteiro.')
 
-print('O antecessor de \033[1m"{}\033[m" é \033[1m"{}"\033[m.\nO sucessor de \033[1m"{}"\033[m é \033[1m"{}"\033[m.'.format(
-    alpha,
-    (alpha - 1),
-    alpha,
-    (alpha + 1)
-    ))
+while True:
+    try:
+        num = int(input())
+        print("""Antecessor de \033[1m"{}\033[m": \033[1m"{}"\033[m.
+Sucessor de \033[1m"{}"\033[m: \033[1m"{}"\033[m.""".format(
+num, (num - 1), num, (num + 1)))
+        break
+    except ValueError:
+        print('Digite um dado válido.')
+        continue
+    except Exception as e:
+        print(f'Ocorreu um erro inesperado: {e}')
+        continue
