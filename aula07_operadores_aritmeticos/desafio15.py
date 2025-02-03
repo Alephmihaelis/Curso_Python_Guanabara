@@ -1,17 +1,26 @@
 
-# Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado e a quantidade de dias pelos quais ele foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0.15 por km rodado.
+"""
+Programa que pergunta a quantidade de km percorridos por um carro alugado
+e a quantidade de dias pelos quais ele foi alugado.
+Depois, calcula o preço a ser pago, sabendo que o carro custa R$60 por dia
+e R$0.15 por km rodado.
+"""
 
-colors = {
-    'bg_mg': '\033[46m',
-    'limpa': '\033[m'
-}
+while True:
+    try:
+        print('Quilômetros rodados.')
+        km_rodados = float(input())
 
-km_p = float(input('Quilômetros rodados: '))
-dias = int(input('Por quantos dias o carro foi alugado? '))
-print('{}O carro rodou {:.2f}km.\nO carro foi alugado por {} dias.\nPreço total: R${:.2f}{}'.format(
-    colors['bg_mg'],
-    km_p,
-    dias,
-    dias * 60 + 0.15 * km_p,
-    colors['limpa']
-    ))
+        print('Dias alugados.')
+        dias_alugados = int(input())
+        print('''O carro rodou {:.2f}km.
+O carro foi alugado por {} dias.
+Preço total: R${:.2f}'''.format(km_rodados, dias_alugados,
+dias_alugados * 60 + 0.15 * km_rodados,))
+        break
+    except ValueError:
+        print('Insira um valor válido.')
+        continue
+    except Exception as e:
+        print(f'Erro {e}. Tente novamente')
+        continue
