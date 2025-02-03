@@ -71,9 +71,3 @@ di = n1 // n2
 e = n1 ** n2
 
 print('A soma vale {}'.format(n1+n2))
-
-'''
-Formatação de código: Se o resultado que tenho precisa ser exibido uma vez só,
-não preciso (e não devo) armazená-lo em uma variável. Basta que passe seus
-parâmetros uma só vez, como na função format acima.
-'''
