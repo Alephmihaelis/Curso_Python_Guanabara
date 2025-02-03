@@ -1,2 +1,2 @@
-# Curso_Python_Guanabara
- Minha trajetória no curso de Python do prof. Gustavo Guanabara
+# curso-python-guanabara
+ *O objetivo deste `branch` é melhorar os códigos dos exercícios propostos pelo prof. Guanabara, segundo os conhecimentos que venho adquirindo.*
