@@ -1,10 +1,10 @@
 
-from math import trunc, floor
-
-'''
+"""
 Programa que lê um número real qualquer pelo teclado e mostra na tela a sua
 porção inteira. Ex.: Digite um número: 6.127 -> O número 6.127 tem a parte inteira 6.
-'''
+"""
+
+from math import trunc, floor
 
 print('Digite um número real.')
 numReal = float(input())
